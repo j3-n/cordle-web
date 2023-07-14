@@ -32,7 +32,8 @@
 
     <div class="search-results">
         <p>
-            {searchResponse}
+            {searchResponse}<br />
+            {userSearch}
         </p>
     </div>
 </div>
