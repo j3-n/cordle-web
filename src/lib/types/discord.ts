@@ -8,5 +8,5 @@ export type User = {
 
 export type Server = {
     id: string;
-    users: [User];
+    name: string;
 };
