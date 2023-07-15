@@ -3,13 +3,19 @@
 	import type { Server } from "$lib/types/discord";
 
     let userSearch: string = '';
-    let searchResponse: Server;
+    let searchResponse: Server = {
+        id: '',
+        name: '',
+        approximate_member_count: 0,
+        approximate_presence_count: 0
+    };
 
     async function search() {
         console.log(userSearch);
 
         let resp = getServer(userSearch);
         searchResponse = await resp;
+        console.log(searchResponse);
     }
 </script>
 
@@ -32,8 +38,9 @@
 
     <div class="search-results">
         <p>
-            {searchResponse}<br />
-            {userSearch}
+            Server Name: {searchResponse.name}<br />
+            Members: {searchResponse.approximate_member_count}<br />
+            Members Online: {searchResponse.approximate_presence_count}<br />
         </p>
     </div>
 </div>
@@ -53,6 +60,8 @@
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        text-align: center;
     }
 
     input {

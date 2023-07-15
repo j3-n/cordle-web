@@ -19,4 +19,6 @@ export type UserPost = {
 export type Server = {
     id: string;
     name: string;
+    approximate_member_count: number;
+    approximate_presence_count: number;
 };
