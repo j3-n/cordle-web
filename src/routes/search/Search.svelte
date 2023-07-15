@@ -40,11 +40,19 @@
 
 <style>
     .search-bar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         gap: 10px;
+    }
+
+    .search-results {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     input {
