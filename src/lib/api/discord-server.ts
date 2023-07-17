@@ -2,7 +2,7 @@ import type { Server } from "$lib/types/discord";
 
 export async function getServer(id: string): Promise<Server> {
     const response = await fetch(
-        `http://localhost:8080/guild?id=${id}`,
+        `http://localhost:8080/guild/${id}`,
         {
             method: "GET",
         },
