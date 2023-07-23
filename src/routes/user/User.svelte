@@ -10,9 +10,11 @@
         games: 15 + 10 + 8,
         elo: 567
     };
-
-
 </script>
+
+<svelte:head>
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+</svelte:head>
 
 <div class="user-display">
     <p>
@@ -35,9 +37,10 @@
         align-items: center;
         text-align: center;
         font-weight: bold;
+        font-family: Baloo;
         color: whitesmoke;
 
         padding: 10px;
-        background-color: darkseagreen;
+        background-color: #6AAA64;
     }
 </style>

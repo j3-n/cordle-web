@@ -19,6 +19,10 @@
     }
 </script>
 
+<svelte:head>
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+</svelte:head>
+
 <div class="search">
     <div class="search-bar">
         <input
@@ -46,6 +50,10 @@
 </div>
 
 <style>
+    .search {
+        font-family: Baloo;
+    }
+
     .search-bar {
         position: absolute;
         top: 15%;
@@ -67,7 +75,7 @@
     input {
         border: 2px;
 
-        background-color: darkseagreen;
+        background-color: #6AAA64;
         color: whitesmoke;
 
         height: 40px;
@@ -79,7 +87,7 @@
     button {
         border: 2px;
 
-        background-color: darkseagreen;
+        background-color: #6AAA64;
         color: whitesmoke;
 
         height: 40px;

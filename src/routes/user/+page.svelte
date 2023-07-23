@@ -7,5 +7,7 @@
 </main>
 
 <style>
-    
+    main {
+        background-color: #050505;
+    }
 </style>
